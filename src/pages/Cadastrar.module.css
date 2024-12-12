@@ -1,0 +1,484 @@
+.cadastroIdentificacao{
+  background-color: rgb(14, 15, 15);
+  width: 100%;
+  height: 50rem;
+}
+.cadastroIdentificacao h2{
+  font-size: 2.2rem;
+  color:  rgb(146, 117, 60);
+  font-weight: bold;
+ font-family: "Bebas Neue", sans-serif;
+ font-style: italic;
+ margin-top: 1rem;
+}
+
+.ContentIdentificacao{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  margin: 0rem auto;
+  gap: 1.3rem;
+}
+.ContentIdentificacao form{
+  margin: 0;
+  color: black;
+}
+.inline{
+  width: 100%;
+ }
+.formIdentificacao{
+  width: 100%;
+ }
+.formIdentificacao label{
+ margin: 0.4rem 0;
+ width: 100%;
+ color:  rgb(179, 138, 58);
+font-size: 1.1rem;
+font-weight: 700;
+}
+.formIdentificacao article{
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+}
+ .formIdentificacao input{
+ height: 3.5rem;
+ width: 100%;
+ font-size: 1rem;
+ font-weight: bold;
+ padding: 1rem  2rem  ;
+ color: wheat;
+ background-color: transparent;
+ border: 2px solid rgb(180, 176, 176);
+ border-radius: 0.3rem;
+ margin: 0.2rem 0rem;
+ }
+ 
+ .formIdentificacao input:valid {
+ color: rgb(0, 0, 0);
+  background-color:rgb(241, 240, 239);
+}
+.formIdentificacao input::placeholder {
+  color: #d8d2d2; 
+  opacity: 1;
+}
+.formIdentificacao input[type=date]{
+  color: #e9e6e6;
+}
+.formIdentificacao select{
+  width: 100%;
+  margin: 0rem 0;
+  background-color: transparent;
+  border: 3px solid rgb(144, 141, 141);
+  color: #d8d2d2;
+  padding: 1rem ;
+}
+.formIdentificacao select:valid {
+  color: rgb(0, 0, 0);
+   background-color:rgb(241, 240, 239); 
+ }
+select option {
+  color: #0d0d0d; 
+}
+
+
+.btnCadastro{
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+.btnCadastrar{
+  width: 50%;
+  height: 3.5rem;
+  opacity: 0.8;
+  background-color:  rgb(179, 138, 58);
+  border-radius: 0.6rem;
+  border: none;
+  font-weight: bold;
+}
+.btnCadastrar:hover{
+  background-color:  rgb(179, 138, 58);
+  opacity: 1;
+}
+.btnFechar{
+  width: 50%;
+  height: 3.5rem;
+  opacity: 0.8;
+  background-color:  rgb(93, 88, 88);
+  border-radius: 0.6rem;
+  border: none;
+  font-weight: bold;
+}
+.btnFechar:hover{
+  background-color:  rgb(93, 88, 88);
+  opacity: 1;
+}
+@media  (max-width: 480px){
+  .cadastroIdentificacao{
+  background-color: rgb(14, 15, 15);
+  width: 100%;
+  height: 100%;
+}
+.cadastroIdentificacao h2{
+  font-size: 2rem;
+  color:  rgb(146, 117, 60);
+  font-weight: bold;
+ font-family: "Bebas Neue", sans-serif;
+ font-style: italic;
+ margin-top: 10rem;
+}
+
+.ContentIdentificacao{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  margin: 0rem auto;
+  padding: 1rem 0;
+  gap: 1.3rem;
+}
+.ContentIdentificacao form{
+  margin: 0;
+  color: black;
+}
+.inline{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+ }
+.formIdentificacao{
+  width: 100%;
+ }
+.formIdentificacao label{
+ margin: 0.4rem 0;
+ width: 100%;
+ color:  rgb(179, 138, 58);
+font-size: 1rem;
+font-weight: 700;
+}
+.formIdentificacao article{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+}
+ .formIdentificacao input{
+ height: 3.5rem;
+ width: 100%;
+ font-size: 0.9rem;
+ font-weight: bold;
+ padding: 1rem   ;
+ color: wheat;
+ background-color: transparent;
+ border: 2px solid rgb(180, 176, 176);
+ border-radius: 0.3rem;
+ margin: 0.2rem 0rem;
+ }
+ 
+ .formIdentificacao input:valid {
+ color: rgb(0, 0, 0);
+  background-color:rgb(241, 240, 239);
+}
+.formIdentificacao input::placeholder {
+  color: #d8d2d2; 
+  opacity: 1;
+}
+.formIdentificacao input[type=date]{
+  color: #e9e6e6;
+}
+.formIdentificacao select{
+  width: 100%;
+  margin: 0rem 0;
+  background-color: transparent;
+  border: 3px solid rgb(144, 141, 141);
+  color: #d8d2d2;
+  padding: 1rem ;
+}
+.formIdentificacao select:valid {
+  color: rgb(0, 0, 0);
+   background-color:rgb(241, 240, 239); 
+ }
+select option {
+  color: #0d0d0d; 
+}
+
+
+.btnCadastro{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.btnCadastrar{
+  width: 100%;
+  height: 2.7rem;
+  opacity: 0.8;
+  background-color:  rgb(179, 138, 58);
+  border-radius: 0.6rem;
+  border: none;
+  font-weight: bold;
+}
+.btnCadastrar:hover{
+  background-color:  rgb(179, 138, 58);
+  opacity: 1;
+}
+.btnFechar{
+  width: 100%;
+  height: 2.7rem;
+  opacity: 0.8;
+  background-color:  rgb(93, 88, 88);
+  border-radius: 0.6rem;
+  border: none;
+  font-weight: bold;
+}
+.btnFechar:hover{
+  background-color:  rgb(93, 88, 88);
+  opacity: 1;
+}
+}
+
+@media (min-width: 481px) and (max-width: 661px){
+  .cadastroIdentificacao{
+  background-color: rgb(14, 15, 15);
+  width: 100%;
+  height: 100%;
+}
+.cadastroIdentificacao h2{
+  font-size: 2rem;
+  color:  rgb(146, 117, 60);
+  font-weight: bold;
+ font-family: "Bebas Neue", sans-serif;
+ font-style: italic;
+ margin-top: 10rem;
+}
+
+.ContentIdentificacao{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  margin: 0rem auto;
+  padding: 1rem 0;
+  gap: 1.3rem;
+}
+.ContentIdentificacao form{
+  margin: 0;
+  color: black;
+}
+.inline{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+ }
+.formIdentificacao{
+  width: 100%;
+ }
+.formIdentificacao label{
+ margin: 0.4rem 0;
+ width: 100%;
+ color:  rgb(179, 138, 58);
+font-size: 1rem;
+font-weight: 700;
+}
+.formIdentificacao article{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+}
+ .formIdentificacao input{
+ height: 3.5rem;
+ width: 100%;
+ font-size: 0.9rem;
+ font-weight: bold;
+ padding: 1rem   ;
+ color: wheat;
+ background-color: transparent;
+ border: 2px solid rgb(180, 176, 176);
+ border-radius: 0.3rem;
+ margin: 0.2rem 0rem;
+ }
+ 
+ .formIdentificacao input:valid {
+ color: rgb(0, 0, 0);
+  background-color:rgb(241, 240, 239);
+}
+.formIdentificacao input::placeholder {
+  color: #d8d2d2; 
+  opacity: 1;
+}
+.formIdentificacao input[type=date]{
+  color: #e9e6e6;
+}
+.formIdentificacao select{
+  width: 100%;
+  margin: 0rem 0;
+  background-color: transparent;
+  border: 3px solid rgb(144, 141, 141);
+  color: #d8d2d2;
+  padding: 1rem ;
+}
+.formIdentificacao select:valid {
+  color: rgb(0, 0, 0);
+   background-color:rgb(241, 240, 239); 
+ }
+select option {
+  color: #0d0d0d; 
+}
+
+
+.btnCadastro{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.btnCadastrar{
+  width: 100%;
+  height: 3rem;
+  opacity: 0.8;
+  background-color:  rgb(179, 138, 58);
+  border-radius: 0.6rem;
+  border: none;
+  font-weight: bold;
+}
+.btnCadastrar:hover{
+  background-color:  rgb(179, 138, 58);
+  opacity: 1;
+}
+.btnFechar{
+  width: 100%;
+  height: 3rem;
+  opacity: 0.8;
+  background-color:  rgb(93, 88, 88);
+  border-radius: 0.6rem;
+  border: none;
+  font-weight: bold;
+}
+.btnFechar:hover{
+  background-color:  rgb(93, 88, 88);
+  opacity: 1;
+}
+}
+
+@media (min-width: 662px) and (max-width: 991px){
+  .cadastroIdentificacao h2{
+    font-size: 2.2rem;
+    color:  rgb(146, 117, 60);
+    font-weight: bold;
+   font-family: "Bebas Neue", sans-serif;
+   font-style: italic;
+   margin-top: 2rem;
+  }
+.ContentIdentificacao{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  margin: 0rem auto;
+  gap: 1.3rem;
+}
+.ContentIdentificacao form{
+  margin: 0;
+  color: black;
+}
+.inline{
+  width: 100%;
+ }
+.formIdentificacao{
+  width: 100%;
+ }
+.formIdentificacao label{
+ margin: 0.4rem 0;
+ width: 100%;
+ color:  rgb(179, 138, 58);
+font-size: 1.1rem;
+font-weight: 700;
+}
+.formIdentificacao article{
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+}
+ .formIdentificacao input{
+ height: 3.5rem;
+ width: 100%;
+ font-size: 1rem;
+ font-weight: bold;
+ padding: 1rem  2rem  ;
+ color: wheat;
+ background-color: transparent;
+ border: 2px solid rgb(180, 176, 176);
+ border-radius: 0.3rem;
+ margin: 0.2rem 0rem;
+ }
+ 
+ .formIdentificacao input:valid {
+ color: rgb(0, 0, 0);
+  background-color:rgb(241, 240, 239);
+}
+.formIdentificacao input::placeholder {
+  color: #d8d2d2; 
+  opacity: 1;
+}
+.formIdentificacao input[type=date]{
+  color: #e9e6e6;
+}
+.formIdentificacao select{
+  width: 100%;
+  margin: 0rem 0;
+  background-color: transparent;
+  border: 3px solid rgb(144, 141, 141);
+  color: #d8d2d2;
+  padding: 1rem ;
+}
+.formIdentificacao select:valid {
+  color: rgb(0, 0, 0);
+   background-color:rgb(241, 240, 239); 
+ }
+select option {
+  color: #0d0d0d; 
+}
+
+
+.btnCadastro{
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+.btnCadastrar{
+  width: 50%;
+  height: 3.5rem;
+  opacity: 0.8;
+  background-color:  rgb(179, 138, 58);
+  border-radius: 0.6rem;
+  border: none;
+  font-weight: bold;
+}
+.btnCadastrar:hover{
+  background-color:  rgb(179, 138, 58);
+  opacity: 1;
+}
+.btnFechar{
+  width: 50%;
+  height: 3.5rem;
+  opacity: 0.8;
+  background-color:  rgb(93, 88, 88);
+  border-radius: 0.6rem;
+  border: none;
+  font-weight: bold;
+}
+.btnFechar:hover{
+  background-color:  rgb(93, 88, 88);
+  opacity: 1;
+}
+}

@@ -1,0 +1,2011 @@
+
+body{
+  background-color: rgb(3, 3, 3);
+}
+.navOrcamento{
+  width: 100%;
+  height: 24rem;
+  background: linear-gradient(rgba(17, 17, 17, 0.412),rgba(20,20,20,1)),url(../assets/drink6.jpg);
+  background-position:center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.navOrcamento h1{
+  font-size: 4.2rem;
+  letter-spacing: 1px;
+  font-style: italic;
+  color:  rgb(183, 143, 63);
+  }
+
+.servicos{
+  height: 42rem;
+  width: 90%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  background-color: rgb(2, 2, 2);
+ justify-content: space-between;
+}
+.carousel {
+  position: relative;
+ margin-bottom: -8px;
+ width: 50%;
+}
+.mainImage {
+  padding-top: 0.2rem;
+  position: relative;
+}
+.mainImage img{
+  display: flex;
+   width: 100%;
+  height: 27rem;
+ position: relative;
+  margin: 1rem 1rem 0;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+.thumbnailWrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+ margin-left: 1rem;
+
+}
+
+.thumbnailImages {
+  display: flex;
+  width: 90%;
+  height: 10rem;
+  margin: 1rem auto;
+  gap: 1rem;
+
+}
+.thumbnailImages img {
+  max-width: 14rem;
+  height: 7rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  transition: transform 0.2s;
+  border-radius: 0.5rem !important;
+}
+.thumbnailImages img:hover{
+  transform:scale(1.2);
+
+}
+.thumbnail {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modalContent {
+  position: relative;
+  max-width: 70%;
+}
+
+.modalImage {
+  width: 100%;
+  border-radius: 1rem; 
+  display: block;
+}
+
+.close {
+  color: #fff;
+  font-size: 36px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.close {
+  color: #fff;
+  font-size: 36px;
+  font-weight: bold;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 1001; 
+}
+.navButton {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(183, 143, 63);
+  cursor: pointer;
+  border-radius: 60%;
+  padding: 0.1rem  0.7rem;
+  transition: 0.5s;
+}
+.navButton:hover {
+  transform: scale(1.3);
+  background-color: transparent;
+}
+.enlargeButton {
+  position: absolute;
+  top: 1rem;
+  right: 0rem;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 50%;
+  z-index: 1; 
+}
+.enlargeButton:hover {
+  background-color: transparent;
+}
+
+.servicoContent{
+  width: 40%;
+  margin-top: 1.6rem;
+  margin-left: 0rem;
+}
+.servicoContent h3{
+  color:  rgb(183, 143, 63);
+  font-size: 1rem;
+}
+.servicoContent h2{
+  color: wheat;
+  font-weight: bold;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid white;
+  width: 80%;
+}
+.servicoContent p{
+  color: rgb(157, 151, 151);
+  font-size: 1rem;
+  font-weight: 500;
+  width: 80%;
+  padding-top: 0.5rem;
+}
+.form{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+
+}
+ .form form{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0;
+}
+
+.select{
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.servicoContent label{
+  font-size: 1.2rem;
+  color:  rgb(183, 143, 63);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.form button{
+  width: 90%;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 0.6rem;
+  background-color:  rgb(183, 143, 63);
+  color:  rgb(0, 0, 0);
+  transition: 0.6s;
+  opacity: 8;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.form button:hover{
+  border: 1px solid rgb(183, 143, 63);
+  opacity: 10;
+  color:  rgb(0, 0, 0);
+}
+.valor p{
+  width: 100%;
+  color: rgb(183, 143, 63);
+  display: flex;
+  justify-content: end;
+  font-size: 1.2rem;
+}
+
+/* SERVICOS */
+
+.section{
+  margin-top: 0;
+  background: linear-gradient(rgba(22, 22, 22, 0.891),rgba(8, 5, 5, 0.275)), url(../assets/drink4.jpeg);
+  background-position:center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+.sectionTitle h1{
+  width: 80%;
+ font-size: 2rem;
+ color:  rgb(146, 117, 60);
+  font-family:cursive;
+ margin:  0rem auto 0;
+ padding-top: 1rem;
+
+}
+.sectionTitle span{
+  width: 2rem;
+  margin-left: 0.5rem;
+  font-size: 2rem;
+  position: relative;
+  bottom: 0.5rem;
+  color:  rgb(146, 117, 60);
+  font-weight: 800;
+}
+/* DRINKS */
+
+.drinksContainer{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  width: 80%;
+  margin: 2rem auto 0;
+  padding-bottom: 4rem;
+  gap: 1rem;
+}
+.drinks{
+  width: 85%;
+  height: 100%;
+  border: 1px solid transparent;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  background-color: rgb(44, 43, 43);
+}
+.drinks img{
+  max-height:55%;
+  border-radius:1rem 1rem 0 0;
+}
+.drinks img:hover{
+  transform: translateY(-5px);
+}
+.drinks span{
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 0.4rem;
+}
+.drinks h2{
+  width: 100%;
+  text-align: center;
+  color:  rgb(146, 117, 60);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+
+}
+.drinks p{
+  width: 90%;
+  margin: 1rem auto 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: rgb(155, 153, 150);
+  padding-left: 1rem;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.sidebar {
+  position: absolute;
+  top: 48%;
+  left: 1%;
+  width: 10%;
+  height: 100%;
+  background-color:transparent;
+  display: flex;
+ padding-top : 20px; 
+  writing-mode: vertical-rl; 
+  transform: rotate(180deg); 
+  text-orientation: mixed;
+  color: rgb(146, 117, 60);
+  overflow-y: none;
+  justify-content: center;
+  
+}
+
+
+.textContainer {
+  height: 93%; 
+  overflow: hidden; 
+  position: relative; 
+  margin: 0;
+}
+@keyframes moveUp {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+.sidebar h2{
+  font-size:2.3rem;
+    text-transform: uppercase;
+    animation: moveUp 20s linear infinite; 
+    position: relative;
+    font-weight: 800;
+}
+    /* MODAIS  */
+    .modalStyleItens{
+      width: 30rem;
+      height: 30%;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 0;
+      background-color:#282c34;
+      background-position:center;
+      background-size: cover;
+      z-index: 1000;
+      border-radius: 1rem;
+      margin: 0;
+    }
+    .modalItens{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      border-radius: 1rem;
+    }
+    .modalItens h2{
+      width: 100%;
+      text-align: center;
+      font-size: 1.7rem;
+    }
+    .modalItens p{
+      width: 100%;
+      text-align: center;
+      font-size: 1rem;
+    }
+    .btnModal{
+      width: 90%;
+      height: 4rem;
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      margin-top: 1rem;
+    }
+    .btnModal .voltarPacotes{
+      width: 50%;
+      margin: 0;
+      transition: 0.7s;
+      padding-top: 0.8rem;
+    }
+    .btnModal .voltarPacotes:hover{
+      background-color:rgb(183, 143, 63);
+      transform: scale(1.05);
+    }
+    .btnModal a{
+      width: 50%;
+      height: 90%;
+      background-color:rgb(183, 143, 63);
+      text-align: center;
+      padding: 1rem;
+      border-radius: 0.8rem;
+      transform: 0.6s;
+      color: white;
+      font-size: 1.5rem;
+      transition: 0.7s;
+    }
+    
+    .btnModal a:hover  {
+      transform: scale(1.05);
+    }
+      /* MODAL ITEM NO CARRINHO     */
+      .modalStyleCampos{
+        width: 30rem;
+        height: 20%;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 0;
+        background-color:#282c34;
+        background-position:center;
+        background-size: cover;
+        z-index: 1000;
+        border-radius: 1rem;
+        margin: 0;
+      }
+      .modalCampos{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 1rem;
+      }
+      .modalCampos h2{
+        width: 100%;
+        text-align: center;
+        font-size: 1.7rem;
+      }
+      .modalCampos p{
+        width: 100%;
+        text-align: center;
+        font-size: 1rem;
+      }
+@media  (max-width: 480px){
+  
+  
+  .navOrcamento h1{
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    font-style: italic;
+    color:  rgb(183, 143, 63);
+    margin: 5rem 0 2rem;
+    text-align: center;
+    }
+  
+  .servicos{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(2, 2, 2);
+    padding-left:0rem ;
+  }
+  .carousel {
+    width: 90%;
+    position: relative;
+   margin: 0 auto;
+  }
+  .mainImage {
+    width: 100%;
+    padding-top: 0.2rem;
+    position: relative;
+  }
+  .mainImage img{
+    display: flex;
+     width: 100%;
+    height: 12rem;
+   position: relative;
+    margin:  1rem auto 0;
+    border-radius: 0.5rem;
+ 
+    cursor: pointer;
+  }
+  
+  .thumbnailWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 0.1rem;
+    margin-left: 0rem;
+    gap: 2rem;
+  }
+  
+  .thumbnailImages {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: 0 a ;
+    align-items: center;
+    justify-content: center;
+  }
+  .thumbnailImages img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin: 1rem 0.3rem 0;
+    border-radius: 0.5rem;
+   
+  }
+  
+  .thumbnail {
+    width: 100px;
+    height: 300px;
+    object-fit: cover;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: transform 0.2s;
+   
+  }
+  
+ 
+  .modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .modalContent {
+    position: relative;
+    max-width: 70%;
+  }
+  
+  .modalImage {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem; 
+    display: block;
+  }
+  
+  .close {
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1001; 
+  }
+  .navButton {
+    background-color: transparent;
+    border: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: rgb(183, 143, 63);
+    cursor: pointer;
+    border-radius: 60%;
+    padding: 0.1rem  0rem;
+    transition: 0.5s;
+    width: 2rem;
+  }
+  .navButton svg{
+    text-align: center;
+    font-size: 0.6rem;
+    width: 1.4rem;
+  }
+
+  .enlargeButton {
+    width: 1rem;
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+    z-index: 1; 
+  }
+ 
+  
+  .servicoContent{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   margin: 3rem auto;
+  }
+  .servicoContent h3{
+    color:  rgb(183, 143, 63);
+    font-size: 1rem;
+  }
+  .servicoContent h2{
+    color: wheat;
+    font-weight: bold;
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid white;
+    width: 100%;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  .servicoContent p{
+    color: rgb(157, 151, 151);
+    font-size: 1rem;
+    font-weight: 500;
+    width: 80%;
+    padding-top: 0.5rem;
+  }
+    .form{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  
+  }
+   .form form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+  
+  
+  .servicoContent label{
+    font-size: 1rem;
+    color:  rgb(183, 143, 63);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  .valor p{
+    width: 100%;
+    color: rgb(183, 143, 63);
+    display: flex;
+    justify-content: end;
+    font-size: 1rem;
+  }
+  .form button{
+    width: 100%;
+    padding: 0.8rem;
+    text-align: center;
+    margin-top: 0.5rem;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 0.6rem;
+    background-color:  rgb(183, 143, 63);
+    color:  rgb(0, 0, 0);
+    transition: 0.6s;
+    opacity: 8;
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+ 
+  
+  
+  /* SERVICOS */
+  
+  .section{
+    margin-top: 0;
+    background: linear-gradient(rgba(22, 22, 22, 0.891),rgba(8, 5, 5, 0.275)), url(../assets/drink4.jpeg);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+  }
+  .sectionTitle h1{
+    width: 90%;
+   font-size: 1.3rem;
+   color:  rgb(146, 117, 60);
+    font-family:cursive;
+  text-align: center;
+   padding-top: 1rem;
+  }
+  .sectionTitle span{
+  display: none;
+  }
+  /* DRINKS */
+  
+
+  .drinksContainer{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 2rem auto 0;
+    padding-bottom: 4rem;
+    gap: 1rem;
+    align-items: center;
+  }
+  .drinks{
+    width: 70%;
+    height: 100%;
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+   
+    border-radius: 1rem;
+    background-color: rgb(44, 43, 43);
+  }
+  .drinks img{
+    width: 100%;
+    height: 8rem;
+  }
+  .drinks span{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 0.4rem;
+  }
+  .drinks h2{
+    color:  rgb(146, 117, 60);
+    padding: 0.5rem 1rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin: 0;
+    text-align: center;
+  }
+  .drinks p{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: rgb(155, 153, 150);
+    padding-left: 1rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+  }
+  .modalStyle{
+    width: 95%;
+    height: 42%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    background-color:#282c34;
+    background-position:center;
+    background-size: cover;
+    z-index: 1000;
+    border-radius: 1rem;
+    margin: 0;
+  }
+  .modal{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+ justify-content: start;
+    border-radius: 1rem;
+    padding-top: 2rem;
+  }
+  .modal h2{
+    width: 100%;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  .modal p{
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-bottom: 0;
+  }
+  .btnModal{
+    width: 90%;
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: start;
+    justify-content: start;
+    margin-top: 1rem;
+  }
+  .btnModal button{
+    width: 100%;
+    margin: 0;
+    transition: 0.7s;
+  }
+  .btnModal button:hover{
+    background-color:rgb(183, 143, 63);
+    transform: scale(1.05);
+  }
+  .btnModal a{
+    width: 100%;
+    height: 80%;
+    background-color:rgb(183, 143, 63);
+    text-align: center;
+    padding: 1rem;
+    border-radius: 0.8rem;
+    transform: 0.6s;
+    color: white;
+    font-size: 1.4rem;
+    transition: 0.7s;
+  }
+  .btnModal a:hover  {
+    transform: scale(1.05);
+  }
+  .btnModal a i{
+    position: relative;
+    bottom: 0.5rem;
+  }
+
+  .sidebar{
+    display: none;
+  }
+}
+@media (min-width: 481px) and (max-width: 661px){
+  
+  .navOrcamento h1{
+    font-size: 2rem;
+    letter-spacing: 1px;
+    font-style: italic;
+    color:  rgb(183, 143, 63);
+    margin-bottom:1rem ;
+    }
+  
+  .servicos{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(2, 2, 2);
+    padding-left:0rem ;
+  }
+  .carousel {
+    width: 90%;
+    position: relative;
+   margin: 0 auto;
+  }
+  .mainImage {
+    width: 100%;
+    padding-top: 0.2rem;
+    position: relative;
+  }
+  .mainImage img{
+    display: flex;
+     width: 100%;
+    height: 15rem;
+   position: relative;
+    margin:  1rem auto 0;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .thumbnailWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 0.1rem;
+    margin-left: 0rem;
+    gap: 2rem;
+  }
+  
+  .thumbnailImages {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: 0 a ;
+    align-items: center;
+    justify-content: center;
+  }
+  .thumbnailImages img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin: 1rem 0.3rem 0;
+    border-radius: 0.5rem;
+   
+  }
+  
+  .thumbnail {
+    width: 100px;
+    height: 300px;
+    object-fit: cover;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: transform 0.2s;
+   
+  }
+  
+  
+  .modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .modalContent {
+    position: relative;
+    max-width: 70%;
+  }
+  
+  .modalImage {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem; 
+    display: block;
+  }  
+  .enlargeButton {
+    width: 1rem;
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+    z-index: 1; 
+  }
+  
+
+  .navButton {
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(183, 143, 63);
+    cursor: pointer;
+    border-radius: 60%;
+    padding: 0.1rem  0.9rem;
+    transition: 0.5s;
+    width: 4rem;
+  }
+  .navButton svg{
+    width: 1.5rem;
+  }
+  
+
+ 
+  /* FORMULARIO  */
+  .servicoContent{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   margin: 3rem auto;
+  }
+  .servicoContent h3{
+    color:  rgb(183, 143, 63);
+    font-size: 1.1rem;
+  }
+  .servicoContent h2{
+    color: wheat;
+    font-weight: bold;
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid white;
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .servicoContent p{
+    color: rgb(157, 151, 151);
+    font-size: 1rem;
+    font-weight: 500;
+    width: 80%;
+    padding-top: 0.5rem;
+  }
+    .form{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  
+  }
+   .form form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+  
+  
+  .servicoContent label{
+    font-size: 1rem;
+    color:  rgb(183, 143, 63);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  .valor p{
+    width: 100%;
+    color: rgb(183, 143, 63);
+    display: flex;
+    justify-content: end;
+    font-size: 1.1rem;
+  }
+  .form button{
+    width: 100%;
+    padding: 0.8rem;
+    text-align: center;
+    margin-top: 0.5rem;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 0.6rem;
+    background-color:  rgb(183, 143, 63);
+    color:  rgb(0, 0, 0);
+    transition: 0.6s;
+    opacity: 8;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+ 
+
+  
+  /* SERVICOS */
+  
+  .section{
+    margin-top: 0;
+    background: linear-gradient(rgba(22, 22, 22, 0.891),rgba(8, 5, 5, 0.275)), url(../assets/drink4.jpeg);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+  }
+  .sectionTitle h1{
+    width: 100%;
+   font-size: 1.6rem;
+   color:  rgb(146, 117, 60);
+    font-family:cursive;
+   text-align: center;
+   padding-top: 1rem;
+  }
+  .sectionTitle span{
+   display: none;
+  }
+ /* DRINKS */
+  
+
+ .drinksContainer{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  width: 80%;
+  margin: 2rem auto 0;
+  padding-bottom: 4rem;
+  gap: 1rem;
+}
+.drinks{
+  width: 100%;
+  height: 100%;
+  border: 1px solid transparent;
+  display: flex;
+  flex-direction: column;
+ 
+  border-radius: 1rem;
+  background-color: rgb(44, 43, 43);
+}
+.drinks img{
+  width: 100%;
+  height: 8rem;
+}
+.drinks span{
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 0.4rem;
+}
+.drinks h2{
+  color:  rgb(146, 117, 60);
+  padding: 0.5rem 1rem;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  margin: 0;
+  text-align: center;
+}
+.drinks p{
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: rgb(155, 153, 150);
+  padding-left: 1rem;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+}
+ .sidebar{
+  display: none;
+ }
+}
+@media (min-width: 662px) and (max-width: 991px){
+  .navOrcamento h1{
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    font-style: italic;
+    color:  rgb(183, 143, 63);
+    }
+  
+    .servicos{
+      height: 100%;
+      width: 100%;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(2, 2, 2);
+      padding-left:0rem ;
+    }
+    .carousel {
+      width: 90%;
+      position: relative;
+     margin: 0 auto;
+    }
+    .mainImage {
+      width: 100%;
+      padding-top: 0.2rem;
+      position: relative;
+    }
+    .mainImage img{
+      display: flex;
+       width: 95%;
+      height: 25rem;
+     position: relative;
+      margin:  1rem auto 0;
+      border-radius: 0.5rem;
+      cursor: pointer;
+    }
+    
+    .thumbnailWrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90%;
+      gap: 0.1rem;
+      margin: 0rem auto;
+      gap: 2rem;
+    }
+    
+    .thumbnailImages {
+      display: flex;
+      width: 100%;
+      height: auto;
+      margin: 0 auto ;
+      align-items: center;
+      justify-content: center;
+    }
+    .thumbnailImages img {
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      margin: 1rem 0.3rem 0;
+      border-radius: 0.5rem;
+     
+    }
+    
+    .thumbnail {
+      width: 100px;
+      height: 300px;
+      object-fit: cover;
+      margin: 0 5px;
+      cursor: pointer;
+      transition: transform 0.2s;
+     
+    }
+    
+    
+    .modal {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+    .modalContent {
+      position: relative;
+      max-width: 70%;
+    }
+    
+    .modalImage {
+      width: 100%;
+      height: 100%;
+      border-radius: 1rem; 
+      display: block;
+    }  
+    .enlargeButton {
+      width: 1rem;
+      position: absolute;
+      top: 2rem;
+      right: 3rem;
+      background-color: transparent;
+      border: none;
+      font-size: 1rem;
+      cursor: pointer;
+      padding: 5px;
+      border-radius: 50%;
+      z-index: 1; 
+    }
+    
+  
+    .navButton {
+      background-color: transparent;
+      border: none;
+      font-size: 1rem;
+      font-weight: bold;
+      color: rgb(183, 143, 63);
+      cursor: pointer;
+      border-radius: 60%;
+      padding: 0.1rem  0.9rem;
+      transition: 0.5s;
+      width: 4rem;
+    }
+    .navButton svg{
+      width: 1.5rem;
+    }
+    
+
+ 
+  /* FORMULARIO  */
+  .servicoContent{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   margin: 3rem auto;
+  }
+  .servicoContent h3{
+    color:  rgb(183, 143, 63);
+    font-size: 1.2rem;
+  }
+  .servicoContent h2{
+    color: wheat;
+    font-weight: bold;
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid white;
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .servicoContent p{
+    color: rgb(157, 151, 151);
+    font-size: 1.1rem;
+    font-weight: 500;
+    width: 80%;
+    padding-top: 0.5rem;
+    text-align: center;
+  }
+    .form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  
+  }
+   .form form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+  .select select{
+    font-size: 0.9rem;
+  }
+  
+  .servicoContent label{
+    font-size: 1.1rem;
+    color:  rgb(183, 143, 63);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  .valor p{
+    width: 100%;
+    color: rgb(183, 143, 63);
+    display: flex;
+    justify-content: end;
+    font-size: 1rem;
+  }
+  .form button{
+    width: 100%;
+    padding: 0.8rem;
+    text-align: center;
+    margin-top: 0.5rem;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 0.6rem;
+    background-color:  rgb(183, 143, 63);
+    color:  rgb(0, 0, 0);
+    transition: 0.6s;
+    opacity: 8;
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+ 
+ 
+  
+  /* SERVICOS */
+  
+  .section{
+    margin-top: 0;
+    background: linear-gradient(rgba(22, 22, 22, 0.891),rgba(8, 5, 5, 0.275)), url(../assets/drink4.jpeg);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+  }
+  .sectionTitle h1{
+    width: 100%;
+   font-size: 1.8rem;
+   color:  rgb(146, 117, 60);
+    font-family:cursive;
+   text-align: center;
+   margin:  0rem auto 0;
+   padding-top: 1rem;
+  }
+  .sectionTitle span{
+   display: none;
+  }
+ /* DRINKS */
+  
+
+ .drinksContainer{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  width: 60%;
+  margin: 2rem auto 0;
+  padding-bottom: 4rem;
+  gap: 1rem;
+}
+.drinks{
+  width: 100%;
+  height: 100%;
+  border: 1px solid transparent;
+  display: flex;
+  flex-direction: column;
+ 
+  border-radius: 1rem;
+  background-color: rgb(44, 43, 43);
+}
+.drinks img{
+  width: 100%;
+  height: 9rem;
+}
+.drinks span{
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 0.4rem;
+}
+.drinks h2{
+  color:  rgb(146, 117, 60);
+  padding: 0.5rem 1rem;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  margin: 0;
+  text-align: center;
+}
+.drinks p{
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: rgb(155, 153, 150);
+  padding-left: 1rem;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+}
+.sidebar{
+  display: none;
+}
+}
+@media (min-width: 992px) and (max-width: 1199px){
+  
+.navOrcamento h1{
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  font-style: italic;
+  color:  rgb(183, 143, 63);
+  }
+
+.servicos{
+  height: 42rem;
+  width: 90%;
+  box-sizing: border-box;
+  display: flex;
+  gap: 3rem;
+  background-color: rgb(2, 2, 2);
+ margin: 0 auto;
+ padding-left: 2.5rem;
+}
+.carousel {
+  max-width: 100%;
+  position: relative;
+ margin-bottom: -8px;
+}
+.mainImage {
+  padding-top: 0.2rem;
+  position: relative;
+}
+.mainImage img{
+  display: flex;
+   width: 100%;
+  height: 20rem;
+ position: relative;
+  margin: 1.5rem 1rem 0;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+.thumbnailWrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+ margin-left: 1rem;
+
+}
+
+.thumbnailImages {
+  display: flex;
+  width: 90%;
+  height: 10rem;
+  margin: 1rem auto;
+  gap: 1rem;
+
+}
+.thumbnailImages img {
+  max-width: 14rem;
+  height: 7rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  transition: transform 0.2s;
+  border-radius: 0.5rem !important;
+}
+.thumbnailImages img:hover{
+  transform:scale(1.2);
+
+}
+.thumbnail {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modalContent {
+  position: relative;
+  max-width: 70%;
+}
+
+.modalImage {
+  width: 100%;
+  border-radius: 1rem; 
+  display: block;
+  height: 70%;
+}
+
+.close {
+  color: #fff;
+  font-size: 36px;
+  font-weight: bold;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 1001; 
+}
+.enlargeButton {
+  width: 1rem;
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 50%;
+  z-index: 1; 
+}
+.navButton {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(183, 143, 63);
+  cursor: pointer;
+  border-radius: 60%;
+  padding: 0.1rem  0.7rem;
+  transition: 0.5s;
+  width: 10%;
+}
+.navButton svg{
+  width: 2rem;
+}
+
+/* FORMULARIO  */
+
+.servicoContent{
+  width: 50%;
+  margin-top: 1.6rem;
+  padding-left: 1rem;
+}
+.servicoContent h3{
+  color:  rgb(183, 143, 63);
+  font-size: 1rem;
+}
+.servicoContent h2{
+  color: wheat;
+  font-weight: bold;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid white;
+  width: 90%;
+  font-size: 1.4rem;
+}
+.servicoContent p{
+  color: rgb(157, 151, 151);
+  font-size: 0.9rem;
+  font-weight: 500;
+  width: 90%;
+  padding-top: 0.5rem;
+  margin: 0;
+}
+ .form form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+width: 90%;
+} 
+.select{
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.select select {
+  padding: 0.7rem 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 0.6rem;
+}
+.servicoContent label{
+  font-size: 1rem;
+  color:  rgb(183, 143, 63);
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+}
+.valor p{
+  width: 100%;
+  color: rgb(183, 143, 63);
+  display: flex;
+  justify-content: end;
+  font-size: 1rem;
+}
+.form button{
+  width: 100%;
+  padding: 0.7rem;
+  text-align: center;
+  margin-top: 0.5rem;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 0.6rem;
+  background-color:  rgb(183, 143, 63);
+  color:  rgb(0, 0, 0);
+  transition: 0.6s;
+  opacity: 8;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+
+
+/* SERVICOS */
+
+.section{
+  margin-top: 0;
+  background: linear-gradient(rgba(22, 22, 22, 0.891),rgba(8, 5, 5, 0.275)), url(../assets/drink4.jpeg);
+  background-position:center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.sectionTitle h1{
+  width: 80%;
+ font-size: 1.7rem;
+ color:  rgb(146, 117, 60);
+  font-family:cursive;
+  margin:  0rem auto 0;
+}
+.sectionTitle span{
+  width: 1rem;
+  margin-left: 0.5rem;
+  font-size: 2rem;
+  position: relative;
+  bottom: 0.5rem;
+  color:  rgb(146, 117, 60);
+  font-weight: 800;
+}
+
+
+/* DRINKS */
+
+.drinksContainer{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  width: 80%;
+  margin: 1rem auto 0;
+  padding-bottom: 4rem;
+  gap: 1rem;
+}
+.drinks{
+  width: 100%;
+  height: 100%;
+  border: 1px solid transparent;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  background-color: rgb(44, 43, 43);
+}
+.drinks img{
+  max-width:100%;
+  border-radius:1rem 1rem 0 0;
+}
+.drinks img:hover{
+  transform: translateY(-5px);
+}
+.drinks span{
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 0.4rem;
+}
+.drinks h2{
+  width: 100%;
+  text-align: center;
+  color:  rgb(146, 117, 60);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top:0.3rem ;
+
+}
+.drinks p{
+  width: 90%;
+  margin: 1rem auto 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: rgb(155, 153, 150);
+  padding-left: 1rem;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.sidebar{
+  display: none;
+}
+
+}
+@media (min-width: 1200px) and (max-width:1440px){
+
+.navOrcamento h1{
+  font-size: 3rem;
+  letter-spacing: 1px;
+  font-style: italic;
+  color:  rgb(183, 143, 63);
+  }
+
+.servicos{
+  height: 45rem;
+  width: 85%;
+  box-sizing: border-box;
+  display: flex;
+  gap: 3rem;
+  background-color: rgb(2, 2, 2);
+ margin: 0 auto;
+ padding-left: 2.5rem;
+}
+.carousel {
+  max-width: 100%;
+  position: relative;
+ margin-bottom: -8px;
+}
+.mainImage {
+  padding-top: 0.2rem;
+  position: relative;
+}
+.mainImage img{
+  display: flex;
+   width: 100%;
+  height: 20rem;
+ position: relative;
+  margin: 1.5rem 1rem 0;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+.thumbnailWrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+ margin-left: 1rem;
+
+}
+
+.thumbnailImages {
+  display: flex;
+  width: 90%;
+  height: 10rem;
+  margin: 1rem auto;
+  gap: 1rem;
+
+}
+.thumbnailImages img {
+  max-width: 14rem;
+  height: 7rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  transition: transform 0.2s;
+  border-radius: 0.5rem !important;
+}
+.thumbnailImages img:hover{
+  transform:scale(1.2);
+
+}
+.thumbnail {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modalContent {
+  position: relative;
+  max-width: 70%;
+}
+
+.modalImage {
+  width: 100%;
+  border-radius: 1rem; 
+  display: block;
+  height: 70%;
+}
+
+.close {
+  color: #fff;
+  font-size: 36px;
+  font-weight: bold;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 1001; 
+}
+.enlargeButton {
+  width: 1rem;
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 50%;
+  z-index: 1; 
+}
+.navButton {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(183, 143, 63);
+  cursor: pointer;
+  border-radius: 60%;
+  padding: 0.1rem  0.7rem;
+  transition: 0.5s;
+  width: 10%;
+}
+.navButton svg{
+  width: 2rem;
+}
+
+/* FORMULARIO  */
+
+.servicoContent{
+  width: 50%;
+  margin-top: 1.6rem;
+  padding-left: 1rem;
+}
+.servicoContent h3{
+  color:  rgb(183, 143, 63);
+  font-size: 1rem;
+}
+.servicoContent h2{
+  color: wheat;
+  font-weight: bold;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid white;
+  width: 80%;
+  font-size: 1.4rem;
+}
+.servicoContent p{
+  color: rgb(157, 151, 151);
+  font-size: 0.9rem;
+  font-weight: 500;
+  width: 80%;
+  padding-top: 0.5rem;
+  margin: 0;
+}
+ .form form{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+width: 90%;
+} 
+.select{
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.select select {
+  padding: 0.7rem 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 0.6rem;
+}
+.servicoContent label{
+  font-size: 1rem;
+  color:  rgb(183, 143, 63);
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+}
+.valor p{
+  width: 100%;
+  color: rgb(183, 143, 63);
+  display: flex;
+  justify-content: end;
+  font-size: 1rem;
+}
+.form button{
+  width: 90%;
+  padding: 0.7rem;
+  text-align: center;
+  margin-top: 0.5rem;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 0.6rem;
+  background-color:  rgb(183, 143, 63);
+  color:  rgb(0, 0, 0);
+  transition: 0.6s;
+  opacity: 8;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+
+/* SERVICOS */
+
+.section{
+  margin-top: 0;
+  background: linear-gradient(rgba(22, 22, 22, 0.891),rgba(8, 5, 5, 0.275)), url(../assets/drink4.jpeg);
+  background-position:center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+.sectionTitle h1{
+  width: 80%;
+ font-size: 2rem;
+ color:  rgb(146, 117, 60);
+  font-family:cursive;
+ margin:  0 auto;
+ padding-top: 1rem;
+}
+.sectionTitle span{
+  width: 2rem;
+  margin-left: 0.5rem;
+  font-size: 2rem;
+  position: relative;
+  bottom: 0.5rem;
+  color:  rgb(146, 117, 60);
+  font-weight: 800;
+}
+
+/* DRINKS */
+
+.drinksContainer{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  width: 80%;
+  margin: 2rem auto 0;
+  padding-bottom: 4rem;
+  gap: 1rem;
+}
+.drinks{
+  width: 85%;
+  height: 100%;
+  border: 1px solid transparent;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  background-color: rgb(44, 43, 43);
+}
+.drinks img{
+  max-height:55%;
+  border-radius:1rem 1rem 0 0;
+}
+.drinks img:hover{
+  transform: translateY(-5px);
+}
+.drinks span{
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 0.4rem;
+}
+.drinks h2{
+  width: 100%;
+  text-align: center;
+  color:  rgb(146, 117, 60);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+
+}
+.drinks p{
+  width: 90%;
+  margin: 1rem auto 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: rgb(155, 153, 150);
+  padding-left: 1rem;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.sidebar{
+  display: none;
+}
+}

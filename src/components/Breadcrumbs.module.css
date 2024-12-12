@@ -1,0 +1,79 @@
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os elementos quebrem linha */
+  align-items: center;
+  justify-content: flex-start; /* Ajuste conforme a necessidade */
+  font-size: 1.7rem; /* Tamanho base */
+  margin: 10px;
+}
+
+.breadcrumbs span {
+  display: inline-block;
+  margin-right: 5px; /* Espaçamento entre os breadcrumbs */
+  white-space: nowrap; /* Evita quebra de linha em breadcrumbs longos */
+  font-weight: bold;
+}
+@media (max-width: 480px) {
+  .breadcrumbs {
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+    justify-content:center; /* Centraliza em telas bem pequenas */
+    margin: 0;
+    gap: 0.2rem;
+  }
+
+  .breadcrumbs span {
+    white-space: normal; /* Permite quebra de linha em breadcrumbs longos */
+    margin: 0;
+
+  }
+}
+@media (min-width:481px) and (max-width:768px){
+  .breadcrumbs {
+    width: 100%;
+    font-size: 1.1rem;
+    text-align: center;
+    justify-content:center; /* Centraliza em telas bem pequenas */
+    margin: 0;
+    gap: 0.2rem;
+  }
+
+  .breadcrumbs span {
+    white-space: normal; /* Permite quebra de linha em breadcrumbs longos */
+    margin: 0;
+
+  }
+}
+@media (min-width:769px) and (max-width:991px){
+  .breadcrumbs {
+    width: 100%;
+    font-size: 1.2rem;
+    text-align: center;
+    justify-content:center; /* Centraliza em telas bem pequenas */
+    margin: 0;
+    gap: 0.2rem;
+  }
+
+  .breadcrumbs span {
+    white-space: normal; /* Permite quebra de linha em breadcrumbs longos */
+    margin: 0;
+
+  }
+}
+@media (min-width:992px) and (max-width:1199px){
+  .breadcrumbs {
+    width: 100%;
+    font-size: 1.3rem;
+    text-align: center;
+    justify-content:center; /* Centraliza em telas bem pequenas */
+    margin: 0;
+    gap: 0.2rem;
+  }
+
+  .breadcrumbs span {
+    white-space: normal; /* Permite quebra de linha em breadcrumbs longos */
+    margin: 0;
+
+  }
+}

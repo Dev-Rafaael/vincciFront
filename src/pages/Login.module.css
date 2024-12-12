@@ -1,0 +1,182 @@
+.loginForm{
+  background-color: rgb(14, 15, 15);
+  top: 0;
+  left: 0%;
+  width: 100%;
+  height: 40rem;
+}
+.loginContent{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+  margin: 0rem auto 0;
+  gap: 1rem;
+}
+.loginContent input{
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+}
+.loginContent h2{
+ font-size: 1.6rem;
+ text-align: center;
+ font-style: italic;
+ font-weight: bold;
+ color:  rgb(179, 138, 58);
+}
+.btnLogin{
+ width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+.btnEntrar{
+  width: 50%;
+  height: 3rem;
+  opacity: 0.8;
+  background-color:  rgb(179, 138, 58);
+  border-radius: 0.6rem;
+  border: none;
+  font-weight: bold;
+}
+.btnEntrar:hover{
+  background-color:  rgb(179, 138, 58);
+  opacity: 1;
+}
+.btnFechar{
+  width: 50%;
+  height: 3rem;
+  opacity: 0.8;
+  background-color:  rgb(93, 88, 88);
+  border-radius: 0.6rem;
+  border: none;
+  font-weight: bold;
+}
+.btnFechar:hover{
+  background-color:  rgb(93, 88, 88);
+  opacity: 1;
+}
+@media  (max-width: 480px){
+  .loginForm{
+    background-color: rgb(14, 15, 15);
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 40rem;
+  }
+  .loginContent{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    margin: 0rem auto 0;
+    gap: 0.5rem;
+  }
+  .loginContent input{
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+  }
+  .loginContent h2{
+   font-size: 1.6rem;
+   text-align: center;
+   font-style: italic;
+   font-weight: bold;
+   color:  rgb(179, 138, 58);
+  }
+  .btnLogin{
+   width: 100%;
+    display: flex;
+    margin: 0 auto;
+    gap: 0.5rem;
+  }
+  .btnEntrar{
+    width: 100%;
+    height: 2.5rem;
+    opacity: 0.8;
+    background-color:  rgb(179, 138, 58);
+    border-radius: 0.6rem;
+    border: none;
+    font-weight: bold;
+  }
+  .btnEntrar:hover{
+    background-color:  rgb(179, 138, 58);
+    opacity: 1;
+  }
+  .btnFechar{
+    width: 100%;
+    height: 2.5rem;
+    opacity: 0.8;
+    background-color:  rgb(93, 88, 88);
+    border-radius: 0.6rem;
+    border: none;
+    font-weight: bold;
+  }
+  .btnFechar:hover{
+    background-color:  rgb(93, 88, 88);
+    opacity: 1;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 991px){
+  .loginForm{
+    background-color: rgb(14, 15, 15);
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 40rem;
+  }
+  .loginContent{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin: 0rem auto 0;
+    gap: 1rem;
+  }
+  .loginContent input{
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+  }
+  .loginContent h2{
+   font-size: 1.6rem;
+   text-align: center;
+   font-style: italic;
+   font-weight: bold;
+   color:  rgb(179, 138, 58);
+  }
+  .btnLogin{
+   width: 100%;
+    display: flex;
+    margin: 0 auto;
+    gap: 0.5rem;
+  }
+  .btnEntrar{
+    width: 50%;
+    height: 2.5rem;
+    opacity: 0.8;
+    background-color:  rgb(179, 138, 58);
+    border-radius: 0.6rem;
+    border: none;
+    font-weight: bold;
+  }
+  .btnEntrar:hover{
+    background-color:  rgb(179, 138, 58);
+    opacity: 1;
+  }
+  .btnFechar{
+    width: 50%;
+    height: 2.5rem;
+    opacity: 0.8;
+    background-color:  rgb(93, 88, 88);
+    border-radius: 0.6rem;
+    border: none;
+    font-weight: bold;
+  }
+  .btnFechar:hover{
+    background-color:  rgb(93, 88, 88);
+    opacity: 1;
+  }
+}
+

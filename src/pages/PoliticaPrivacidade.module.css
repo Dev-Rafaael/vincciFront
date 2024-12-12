@@ -1,0 +1,388 @@
+.imgPrivacidade{
+  width: 100%;
+  height: 24rem;
+  background: linear-gradient(rgba(17, 17, 17, 0.663),rgba(20,20,20,1)),url(../assets/drink3.jpeg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.imgPrivacidade h1{
+  font-size: 4rem;
+  letter-spacing: -2px;
+  font-style: italic;
+  color:rgb(146, 117, 60);
+  }
+  .imgPrivacidade p{
+    width: 59%;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 1rem 0  2rem 0;
+    color: white;;
+  }
+
+ .politica{
+  background-color: rgba(0, 0, 0, 0.648);
+ padding-bottom: 1rem;
+ }
+.contentPolitica{
+  width: 90%;
+ margin: 2rem auto 0;
+}
+.contentPolitica h1{
+  color: rgb(146, 117, 60);
+  font-size: 2.5rem;
+  margin: 1rem 0;
+  font-weight: 800;
+  font-family: "Kanit", Sans-serif;
+}
+.contentPolitica h2{
+  color: rgb(146, 117, 60);
+  font-size: 1.7rem;
+  margin: 1.5rem 0;
+  font-family: "Kanit", Sans-serif;
+  font-weight: 800;
+  letter-spacing: -1px
+}
+.contentPolitica h3{
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 1rem 0;
+}
+.contentPolitica p{
+  line-height: 1.6rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #dedada;
+  margin: 1rem 0  0;
+  font-family: "Kanit", Sans-serif;
+}
+
+.sidebar {
+  position: absolute;
+  top: 51%;
+  left: 2%;
+  width: 10%;
+  height: 71.5rem;
+  background-color:transparent;
+  display: flex;
+ padding-top : 20px; 
+  writing-mode: vertical-rl; 
+  transform: rotate(180deg); 
+  text-orientation: mixed;
+  color: rgb(146, 117, 60);
+  overflow-y: none;
+  justify-content: center;
+  
+}
+
+.textContainer {
+  height: 100%; 
+  overflow: hidden; 
+  position: relative; 
+  margin: 0;
+
+}
+@keyframes moveUp {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+.sidebar h2{
+  font-size:2.3rem;
+    text-transform: uppercase;
+    animation: moveUp 25s linear infinite; 
+    position: relative;
+    padding-bottom: 0px;
+}
+@media (max-width:480px){
+  
+.imgPrivacidade h1{
+  margin-top: 4rem;
+  font-size: 1.6rem;
+  letter-spacing: -2px;
+  font-style: italic;
+  color:rgb(146, 117, 60);
+  text-align: center;
+  }
+  .imgPrivacidade p{
+    width: 90%;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin: 0 2rem 0;
+    color: white;;
+  }
+
+ .politica{
+  background-color: rgba(0, 0, 0, 0.648);
+ padding-bottom: 1rem;
+ }
+.contentPolitica{
+  width: 90%;
+ margin: 2rem auto 0;
+}
+.contentPolitica h1{
+   width: 100%;
+  margin: 1.5rem 0;
+   font-size: 1.4rem; 
+  font-weight: 800;
+  color: rgb(146, 117, 60);
+  text-align: center;
+  font-family: "Kanit", Sans-serif;
+}
+.contentPolitica h2{
+  color: rgb(146, 117, 60);
+  font-size: 1.15rem;
+  margin: 0.5rem 0;
+  font-family: "Kanit", Sans-serif;
+  font-weight: 800;
+  letter-spacing: -1px
+}
+.contentPolitica p{
+  line-height: 1.6rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #dedada;
+  margin: 0rem 0  0;
+  font-family: "Kanit", Sans-serif;
+}
+.sidebar {
+display: none;
+  
+}
+}
+
+@media (min-width:481px) and (max-width:661px){
+  
+.imgPrivacidade h1{
+  margin-top: 7rem;
+  font-size: 2rem;
+  letter-spacing: -2px;
+  font-style: italic;
+  color:rgb(146, 117, 60);
+  text-align: center;
+  }
+  .imgPrivacidade p{
+    width: 90%;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    margin:  0  2rem 0;
+    color: white;;
+  }
+
+ .politica{
+  background-color: rgba(0, 0, 0, 0.648);
+ padding-bottom: 1rem;
+ }
+.contentPolitica{
+  width: 90%;
+ margin: 2rem auto 0;
+}
+.contentPolitica h1{
+   width: 100%;
+  margin: 1rem 0 1.5rem;
+   font-size: 1.8rem; 
+  font-weight: 800;
+  color: rgb(146, 117, 60);
+  text-align: center;
+  font-family: "Kanit", Sans-serif;
+}
+.contentPolitica h2{
+  color: rgb(146, 117, 60);
+  font-size: 1.3rem;
+  margin: 0.5rem 0;
+  font-family: "Kanit", Sans-serif;
+  font-weight: 800;
+  letter-spacing: -1px
+}
+.contentPolitica p{
+  line-height: 1.6rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #dedada;
+  margin:   0;
+  font-family: "Kanit", Sans-serif;
+}
+.sidebar {
+  display: none;
+}
+}
+@media (min-width:662px) and (max-width:991px){
+  
+.imgPrivacidade h1{
+  margin-top: 6rem;
+  font-size: 2.2rem;
+  letter-spacing: -2px;
+  font-style: italic;
+  color:rgb(146, 117, 60);
+  text-align: center;
+  }
+  .imgPrivacidade p{
+    width: 90%;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0  2rem 0;
+    color: white;;
+  }
+
+ .politica{
+  background-color: rgba(0, 0, 0, 0.648);
+ padding-bottom: 1rem;
+ }
+.contentPolitica{
+  width: 90%;
+ margin: 2rem auto 0;
+}
+.contentPolitica h1{
+   width: 100%;
+  margin: 1rem 0 1rem;
+   font-size: 2rem; 
+  font-weight: 800;
+  color: rgb(146, 117, 60);
+  text-align: center;
+  font-family: "Kanit", Sans-serif;
+}
+.contentPolitica h2{
+  color: rgb(146, 117, 60);
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  font-family: "Kanit", Sans-serif;
+  font-weight: 800;
+  letter-spacing: -1px
+}
+.contentPolitica p{
+  line-height: 1.6rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #dedada;
+  margin:  0 ;
+  font-family: "Kanit", Sans-serif;
+}
+.sidebar {
+  display: none;
+}  
+}
+@media (min-width:992px) and (max-width:1199px){
+  
+.imgPrivacidade h1{
+  margin-top: 4rem;
+  font-size: 2.5rem;
+  letter-spacing: -2px;
+  font-style: italic;
+  color:rgb(146, 117, 60);
+  text-align: center;
+  }
+  .imgPrivacidade p{
+    width: 90%;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0  2rem 0;
+    color: white;;
+  }
+
+ .politica{
+  background-color: rgba(0, 0, 0, 0.648);
+ padding-bottom: 1rem;
+ }
+.contentPolitica{
+  width: 90%;
+ margin: 2rem auto 0;
+}
+.contentPolitica h1{
+   width: 100%;
+  margin: 2rem 0;
+   font-size: 2.3rem; 
+  font-weight: 800;
+  color: rgb(146, 117, 60);
+  text-align: center;
+  font-family: "Kanit", Sans-serif;
+}
+.contentPolitica h2{
+  color: rgb(146, 117, 60);
+  font-size: 1.3rem;
+  margin: 0.7rem 0;
+  font-family: "Kanit", Sans-serif;
+  font-weight: 800;
+  letter-spacing: -1px
+}
+.contentPolitica p{
+  line-height: 1.6rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #dedada;
+  margin:  0.3rem 0;
+  font-family: "Kanit", Sans-serif;
+}
+.sidebar {
+  display: none;
+  
+}
+
+}
+@media (min-width:1200px)and (max-width:1440px) {
+  
+.imgPrivacidade h1{
+  margin-top: 4rem;
+  font-size: 3rem;
+  letter-spacing: -2px;
+  font-style: italic;
+  color:rgb(146, 117, 60);
+  text-align: center;
+  }
+  .imgPrivacidade p{
+    width: 80%;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin:  0  2rem 0;
+    color: white;;
+  }
+
+ .politica{
+  background-color: rgba(0, 0, 0, 0.648);
+ padding-bottom: 1rem;
+ }
+.contentPolitica{
+  width: 90%;
+ margin: 2rem auto 0;
+}
+.contentPolitica h1{
+   width: 100%;
+  margin: 1.4rem 0;
+   font-size: 2.7rem; 
+  font-weight: 800;
+  color: rgb(146, 117, 60);
+  text-align: center;
+  font-family: "Kanit", Sans-serif;
+}
+.contentPolitica h2{
+  color: rgb(146, 117, 60);
+  font-size: 1.6rem;
+  margin: 0.8rem 0;
+  font-family: "Kanit", Sans-serif;
+  font-weight: 800;
+  letter-spacing: -1px
+}
+.contentPolitica p{
+  line-height: 1.6rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #dedada;
+  margin: 0.5rem 0  0;
+  font-family: "Kanit", Sans-serif;
+}
+.sidebar {
+  display: none;
+  
+}
+}
